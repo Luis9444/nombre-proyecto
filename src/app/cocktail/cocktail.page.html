@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Detalles del Trago
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      {{ cocktail?.strDrink }}
+    </ion-card-header>
+    <ion-card-content>
+      <ion-img [src]="cocktail?.strDrinkThumb"></ion-img>
+      <ion-list>
+        <ion-item>
+          <ion-label>Ingredient 1:</ion-label>
+          <ion-note>{{ cocktail?.strIngredient1 }}</ion-note>
+        </ion-item>
+        <ion-item>
+          <ion-label>Ingredient 2:</ion-label>
+          <ion-note>{{ cocktail?.strIngredient2 }}</ion-note>
+        </ion-item>
+        <!-- Add more ingredients as needed -->
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
